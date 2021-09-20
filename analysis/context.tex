@@ -1,0 +1,36 @@
+\subsection{Context-based}
+
+\subsubsection{Privacy}
+Excellent\\
+The method doesn't employ any tracking elements and works when used in anonymous
+networks like TOR\@.
+
+\subsubsection{Effectiveness}
+Bad\\
+
+Domain context is limited in nature. An attacker could either become familiar
+with the service and then mount an attack, or they could mount brute force attack
+to aggregate all possible challenges that the service presents.
+
+Both of these attacks are practical.
+
+% TODO cite CAPTCHA farm cost analysis paper
+ease.
+\subsubsection{Accessibility}
+Bad\\
+
+This method poses challenges to users with cognitive disabilities as it requires
+them to retain information and recollect in a timely manner. Also, this method
+makes poses challenges to new visitors to service. The familiarization period to
+solve CAPTCHAs in a timely fashion might be too high for someone new.
+
+\subsubsection{Accuracy}
+Bad\\
+Success and failure are absolute states in this method. A solution that doesn't
+match the challenge text results in failure while a match is considered a
+success. But when above-mentioned circumvention methods are used, there will be
+results will be completely inaccurate and as the system lacks any adaptational
+capabilities, the failure will be long-lasting.  
+
+The method uses only challenge answers in its decision process. No other
+external factors are involved.
