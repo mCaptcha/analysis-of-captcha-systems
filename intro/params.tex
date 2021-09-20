@@ -1,8 +1,9 @@
 \subsection{CAPTCHA rating parameters}
 CAPTCHA systems use a variety of methods in their decision process. Every method
-has it's own strengths and limitations but the following parameters have been
+has its own strengths and limitations, but the following parameters have been
 chosen to uniformly rate CAPTCHA methods and systems in an attempt to compare
 them.
+
 \begin{description}[\IEEEsetlabelwidth{Effectiveness}]
 \item[Privacy] 
 	\begin{itemize}
@@ -12,9 +13,9 @@ them.
 \item[Effectiveness]
 	\begin{itemize}
 		\item Is the method/system effective in containing DoS attacks? 
-		\item Can the method be circumvented? If yes, how practical/feasible
-		the attack?
-
+		\item Can the method be circumvented? If yes, how practical or feasible
+			is the attack? If the method has feasible or practical
+			circumventions, it is immediately marked `bad' for effectiveness.
 	\end{itemize}
 \item[Accessibility]
 	\begin{itemize}
@@ -24,10 +25,14 @@ them.
 		\item Does the method have a language dependency which poses a challenge to
 		non-English speakers?
 	\end{itemize}
+	If a method is impossible to use for any group of users, some of which are
+	mentioned above, 
 \item[Accuracy]
 	\begin{itemize}
 		\item How accurate is the method in detecting potentially malicious
 			users?
 		\item Are there any factors that method's impact accuracy?
 	\end{itemize}
+	Bad accuracy when circumventions are used results downgrades `good' to `bad'
+	rating.
 \end{description}

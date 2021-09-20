@@ -1,17 +1,28 @@
 \subsection{Align Object}
+
 \subsubsection{Privacy}
 Excellent\\
-The method doesn't on any tracking elements in it's decision process.
+The method doesn't employ any tracking elements and works when used in anonymous
+networks like TOR\@.
 
 \subsubsection{Effectiveness}
-Good\\
+Bad\\
 The method relies on Optical Character Recognition (OCR) capabilities of human
 users. OCR technology is becoming increasingly sophisticated which would render
 this method ineffective in the future.
 
 Without OCR, this method can be bypassed using human-powered CAPTCHA farms with
 % TODO cite CAPTCHA farm cost analysis paper
-ease. On an average, farms generate one CAPTCHA solution every 40 seconds
+ease.
 \subsubsection{Accessibility}
+Bad\\
+Since the method relies on OCR, it is inaccessible to users with visual and
+cognitive disabilities.
 \subsubsection{Accuracy}
-\subsubsection{Privacy}
+Good\\
+Success and failure are absolute states in this method. A misaligned object
+results in failure while a properly aligned object succeeds. But when using
+employing CAPTCHA farms for circumvention, the method fails absolutely.
+
+The method uses only the object alignment in its decision process. No other
+external factors are involved.
