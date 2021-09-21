@@ -1,0 +1,62 @@
+\subsection{reCAPTCHA}
+
+reCAPTCHA is a CAPTCHA system owned by Google. It is the most popular CAPTCHA
+system currently deployed on the internet. The system uses the following methods
+in its decision making process:
+
+\begin{itemize}
+	\item Image identification
+	\item IP tracking
+	\item Proprietary AI
+	\item Session tracking
+\end{itemize}
+
+\subsubsection{Privacy}
+Bad\\
+Google's reCAPTCHA tracks its users via IP logging and session tracking. They
+use supercookies to monitor their users' internet activity. The user can ban
+cookies from reCAPTCHA and related services but if they did, they will be
+subjected to higher difficulty puzzles or won't be allowed to access the
+service. This is one of the reasons why TOR and other VPN users face
+difficulties with the system.
+
+The system also bans traffic from TOR exit nodes and due to their proprietary
+and opaque decision mechanism, very little is known about how they blacklist
+users.
+\subsubsection{Effectiveness}
+Good\\
+
+reCAPTCHA denies access to most bots. The OCR technology used by the system is
+very sophisticated. But cheap labor powered CAPTCHA farms are available which
+offer CAPTCHA solving solutions for a fraction of what reCAPTCHA charges its
+users. This bypass is practical as it is cheap and readily available. 
+
+% TODO cite CAPTCHA farm cost analysis paper
+ease.
+\subsubsection{Accessibility}
+Bad\\
+
+reCAPTCHA was initially offering audio CAPTCHAs along with image identification
+challenges but when audio recognition technology matured and was able to solve
+most audio challenges, reCAPTCHA stopped offering audio challenges.
+
+Image identification poses challenges to users with visual and cognitive
+disabilities.
+
+The IP tracking based mechanism posses accessibility threats to users behind
+NATs and VPNs.
+
+\subsubsection{Accuracy}
+Bad\\
+
+IP based tracking produces poor results when users behind NATs and VPN encounter
+the service.
+
+
+Overall, reCAPTCHA is a serious threat to the internet as it can, in theory,
+deny access to anyone it chooses to. The decision making process is opaque and
+centralised in nature and users, service providers and visitors alike, have very
+little say in how the system behaves.
+
+Also, the popularity of reCAPTCHA allows Google to track users across websites
+and profile them which threatens the freedom of users on the internet.

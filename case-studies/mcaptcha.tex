@@ -1,0 +1,57 @@
+\subsection{mCaptcha}
+
+mCaptcha is a free (as in freedom), experimental Proof of Work CAPTCHA system
+that uses variable difficulty proofs. The AGPL licensing guarantees freedom of
+its users and allows for competing implementations.
+
+The system uses variable difficulty proofs to 
+\begin{itemize}
+	\item Image identification
+	\item IP tracking
+	\item Proprietary AI
+	\item Session tracking
+\end{itemize}
+
+\subsubsection{Privacy}
+Excellent\\
+mCaptcha doesn't use session or IP  tracking, so it works when used in anonymous
+networks like TOR\@.
+
+\subsubsection{Effectiveness}
+Excellent\\
+
+mCaptcha uses salts to prevent rainbow table based attacks and TTLs to ban
+stale entries. It also users a caching mechanism to prevent replay attacks. To
+combat an attack in-progress attack, the system is designed to temporarily 
+increase the difficulty of the proofs. The system also has options to
+personalise proof requirements for each CAPTCHA deployment. This allows for
+system administrators to select requirements which better suit their needs. 
+
+% TODO cite CAPTCHA farm cost analysis paper
+ease.
+\subsubsection{Accessibility}
+Good to Excellent\\
+
+mCaptcha is non-interactive, so it is fully accessible to users with all
+disabilities. To allow users on slow devices access to the service, mCaptcha has
+options to set different difficulty levels. Webmasters can use this option to
+set lower difficulties to while the website is receiving normal levels of
+traffic and set higher levels of difficulties when the website receives unusual
+amounts of traffic. Therefore, the website administrators are responsible for
+mCaptcha's behaviour on their websites.
+
+\subsubsection{Accuracy}
+Excellent\\
+
+Success and failure are absolute states in this method. A proof that fails
+verification is rejected, and a successful verification is permitted. The system
+is able to sense attacks and adapts by raising the difficulty requirement for
+all incoming users. An attacker who is presented with increased difficulty will
+either have to allocate more resources to sustain the attack or retreat in
+defeat. However, this increased difficulty might impact well behaving users too,
+but this is short-lived as the difficulty requirement will be relaxed once the
+attack is contained.
+
+Overall, mCaptcha is an attempt at strengthening the web and the internet with
+open technologies. CAPTCHAs in their original sense were used as rate-limiters
+and mCaptcha, with its PoW mechanism does just that.
