@@ -1,0 +1,39 @@
+\subsection{Proof of Work}
+
+\subsubsection{Privacy}
+Excellent\\
+Proof of Work (PoW) doesn't use any tracking elements and are able to work
+in anonymous networks like TOR\@.
+
+\subsubsection{Effectiveness}
+Excellent\\
+
+Proofs are cryptographically sound and can't be forged. PoW works on the idea
+that the work done to send a request must be more than the work done to respond
+to it. Therefore, a successful attack will require the attacker to dedicate
+significantly more resources than what the service provider uses to run the
+service.
+
+% TODO cite CAPTCHA farm cost analysis paper
+ease.
+\subsubsection{Accessibility}
+Good\\
+
+The process is fully automated so doesn't require any user interactions. So it
+is ideal for users with auditory, cognitive and visual disabilities. But it
+poses challenges to users with slower devices. Some PoW implementations
+time-to-live (TTL) on challenges so when a device is not able to generate proofs
+within that period, their solution will be rejected and will be bared from
+accessing the service.
+
+\subsubsection{Accuracy}
+Good\\
+
+Success and failure are absolute states in this method. A proof that doesn't
+pass verification will be rejected and the user barred from accessing the
+service. But when above-mentioned circumvention methods are used, there will be
+results will be completely inaccurate and as the system lacks any adaptational
+capabilities, the failure will be long-lasting.  
+
+The method uses only challenge proofs in its decision process. No other
+external factors are involved.

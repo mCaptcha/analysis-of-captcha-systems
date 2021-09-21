@@ -1,0 +1,37 @@
+\subsection{IP tracking-based}
+
+\subsubsection{Privacy}
+Bad\\
+IP tracking poses privacy threats to users who prefer to be anonymous. Also,
+when accessing a service via a VPN like TOR, IP tracking produces false
+positives.
+
+\subsubsection{Effectiveness}
+Bad\\
+
+Infected computers around the world are used as botnets. So attackers have
+access to a wide range of burnable IP addresses. In such cases, IP tracking-based   
+solutions result in total failure.
+
+Also, due to IPv4 exhaustion and the slow adoption of IPv6, several users access
+the internet through Network Address Translation (NAT) routing. In such cases, a
+single IP can represent thousands of users. If the system relies on IP
+based-tracking entirely for its decision making process, then it will have to
+introduce relaxation rules to accommodate users behind NAT, which reduces it's
+effectiveness.
+
+Both of these attacks are practical.
+
+% TODO cite CAPTCHA farm cost analysis paper
+ease.
+\subsubsection{Accessibility}
+Bad\\
+
+Without relaxation rules for NAT users, unassuming users will be falsely flagged as
+malicious and will dramatically affect their accessibility to the service.
+
+\subsubsection{Accuracy}
+Bad\\
+
+This method does not produce accurate results when it encounters users behind
+NATs or VPNs.
